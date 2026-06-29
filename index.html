@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MiniCraft 3D</title>
+
+<style>
+html,body{
+margin:0;
+overflow:hidden;
+background:#87CEEB;
+}
+
+canvas{
+display:block;
+}
+
+#ui{
+position:fixed;
+bottom:20px;
+left:20px;
+z-index:100;
+}
+
+button{
+width:60px;
+height:60px;
+font-size:25px;
+margin:4px;
+border:none;
+border-radius:50%;
+background:#ffffff88;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="ui">
+<div><button id="up">▲</button></div>
+<div>
+<button id="left">◀</button>
+<button id="down">▼</button>
+<button id="right">▶</button>
+</div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
